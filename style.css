@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #1f1f1f;
+    width: 240px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo h2 {
+    color: #f48fb1;
+    text-align: center;
+}
+
+.sidebar .menu {
+    list-style: none;
+}
+
+.sidebar .menu li {
+    margin: 20px 0;
+}
+
+.sidebar .menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar .menu li a:hover, .sidebar .menu li a.active {
+    background-color: #f48fb1;
+    color: #fff;
+}
+
+.sidebar .menu li .material-icons {
+    margin-right: 10px;
+}
+
+.sidebar .bottom-menu {
+    margin-top: auto;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .search-bar input {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header .user-options a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.banner {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner .highlight {
+    color: #f48fb1;
+}
+
+.banner .btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f48fb1;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.banner .btn.secondary {
+    background-color: #555;
+}
+
+.section {
+    margin: 40px 0;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* Add similar styles for tables, lists, and footer based on the image design */

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Music Recommender</h1>
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Melodies - Music Platform</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Sidebar -->
+            <nav class="sidebar">
+                <div class="logo">
+                    <h2>Melodies</h2>
+                </div>
+                <ul class="menu">
+                    <li><a href="#" class="active"><span class="material-icons">home</span> Home</a></li>
+                    <li><a href="#"><span class="material-icons">queue_music</span> Discover</a></li>
+                    <li><a href="#"><span class="material-icons">favorite</span> Favorites</a></li>
+                    <li><a href="#"><span class="material-icons">album</span> Albums</a></li>
+                    <li><a href="#"><span class="material-icons">artist</span> Artists</a></li>
+                    <li><a href="#"><span class="material-icons">account_circle</span> Your Account</a></li>
+                    <li><a href="#"><span class="material-icons">settings</span> Settings</a></li>
+                </ul>
+                <div class="bottom-menu">
+                    <a href="#"><span class="material-icons">logout</span> Logout</a>
+                </div>
+            </nav>
+    
+            <!-- Main Content -->
+            <main class="content">
+                <header class="header">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="user-options">
+                        <a href="#">Sign In</a>
+                        <a href="#">Sign Up</a>
+                    </div>
+                </header>
+    
+                <!-- Main Banner Section -->
+                <section class="banner">
+                    <h1>All the <span class="highlight">Best Songs</span> in One Place</h1>
+                    <button class="btn">Show More</button>
+                    <button class="btn secondary">Create Playlist</button>
+                </section>
+    
+                <!-- Weekly Top Songs -->
+                <section class="section">
+                    <h2>Weekly Top Songs</h2>
+                    <div class="song-list">
+                        <!-- Song Cards go here -->
+                    </div>
+                </section>
+    
+                <!-- New Releases -->
+                <section class="section">
+                    <h2>New Release Songs</h2>
+                    <div class="release-list">
+                        <!-- Release Cards go here -->
+                    </div>
+                </section>
+    
+                <!-- Trending Songs -->
+                <section class="section trending">
+                    <h2>Trending Songs</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Song</th>
+                                <th>Artist</th>
+                                <th>Album</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Trending Songs Rows go here -->
+                        </tbody>
+                    </table>
+                </section>
+    
+                <!-- Popular Artists -->
+                <section class="section">
+                    <h2>Popular Artists</h2>
+                    <div class="artist-list">
+                        <!-- Artist Cards go here -->
+                    </div>
+                </section>
+    
+                <!-- Top Albums -->
+                <section class="section">
+                    <h2>Top Albums</h2>
+                    <div class="album-list">
+                        <!-- Album Cards go here -->
+                    </div>
+                </section>
+    
+                <!-- Mood Playlist -->
+                <section class="section">
+                    <h2>Mood Playlist</h2>
+                    <div class="playlist-list">
+                        <!-- Playlist Cards go here -->
+                    </div>
+                </section>
+    
+                <!-- Join Platform -->
+                <section class="join-platform">
+                    <h2>Join Our Platform</h2>
+                    <p>You can be part of our platform...</p>
+                    <form action="#">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <button class="btn">Sign Up</button>
+                    </form>
+                </section>
+    
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="footer-content">
+                        <p>&copy; 2024 Melodies</p>
+                        <ul class="socials">
+                            <li><a href="#"><span class="material-icons">facebook</span></a></li>
+                            <li><a href="#"><span class="material-icons">instagram</span></a></li>
+                            <li><a href="#"><span class="material-icons">twitter</span></a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+    </html>
+    
+    <div id="loginPage" class="form-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <div id="genresPage" class="form-container" style="display:none;">
+        <h2>Select Genres (up to 3)</h2>
+        <div id="genreContainer">
+            <div class="genre-box" data-genre="Pop">Pop <span class="tick">✓</span></div>
+            <div class="genre-box" data-genre="Rock">Rock <span class="tick">✓</span></div>
+            <div class="genre-box" data-genre="Jazz">Jazz <span class="tick">✓</span></div>
+            <div class="genre-box" data-genre="Classical">Classical <span class="tick">✓</span></div>
+            <div class="genre-box" data-genre="Hip-Hop">Hip-Hop <span class="tick">✓</span></div>
+            <div class="genre-box" data-genre="Electronic">Electronic <span class="tick">✓</span></div>
+        </div>
+        <button id="okButton" class="btn">OK</button>
+    </div>
+
+    <div id="artistsPage" class="form-container" style="display:none;">
+        <h2>Select Your Favorite Artists</h2>
+        <div id="artistContainer"></div>
+        <button id="finishButton" class="btn">Finish</button>
+    </div>
+
+    <div id="recommendationsPage" class="form-container" style="display:none;">
+        <h2>Your Recommendations</h2>
+        <div id="recommendationsContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
